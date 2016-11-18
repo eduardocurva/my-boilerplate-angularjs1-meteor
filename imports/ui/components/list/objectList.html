@@ -1,7 +1,21 @@
-  <ul>
-    <li ng-repeat="party in objectList.objects">
-      {{party.name}}
 
-      <p>{{party.description}}</p>
-    </li>
-  </ul>
+<md-content class="md-padding"  layout="row" layout-xs="column">
+    <div flex ng-repeat="obj in objectList.objects">
+      <md-card >
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">  {{obj.name}}</span>
+            <span class="md-subhead">{{obj.description}}</span>
+          </md-card-title-text>
+          <md-card-title-media>
+            <div class="md-media-lg card-media"></div>
+          </md-card-title-media>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button>Action 1</md-button>
+          <md-button>Action 2</md-button>
+        </md-card-actions>
+      </md-card>
+      
+    </div>
+  </md-content>

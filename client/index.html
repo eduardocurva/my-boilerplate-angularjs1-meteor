@@ -1,4 +1,28 @@
-<body ng-app="default" ng-strict-di="">
-  here:
-  <default></default>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.7/angular-material.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body ng-app="default" layout="column" ng-strict-di="" ng-cloak>
+	<md-toolbar layout="row" class="md-toolbar-tools">
+		<md-button class="menu md-icon-button" hide-gt-md ng-click="default.tst()" aria-label="Show Menu">
+			   
+                  <md-icon class="s24" aria-label="Menu" md-svg-icon="navigation:ic_menu_24px"></md-icon>
+          
+		</md-button>
+		<h1>My boilerplate - meteor + angular + material design</h1>
+	</md-toolbar>
+	<!-- Container #2 -->
+	<div flex layout="row">
+		<custom-side-bar>	</custom-side-bar>
+		<md-content flex id="content">
+			<default></default>
+		</md-content>
+	</div>
+
+
+	<!-- TODO sidenav -->
+
+
 </body>
