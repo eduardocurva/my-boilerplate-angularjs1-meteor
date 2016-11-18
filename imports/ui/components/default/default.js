@@ -7,8 +7,7 @@ import { name as CustomSideBar} from '../customsidebar/customSideBar';
 
 class Default {
 
-
- constructor($scope, $reactive, $mdSidenav) {
+  constructor($scope, $reactive, $mdSidenav) {
         'ngInject';
 
         $reactive(this).attach($scope);
@@ -16,11 +15,8 @@ class Default {
         $mdSidenav('left').toggle();        
        console.log('hey');
 
-    }
-    
+    } 
   }
-
-  
 }
 
 const name = 'default';
