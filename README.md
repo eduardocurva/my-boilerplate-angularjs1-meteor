@@ -6,6 +6,8 @@ This is my personal boilerplate to start a angular1+meteor project.
 
 * Use of es6 classes and modules
 
+* Angular material desigin and material icons available.
+
 It's based on this tutorial:
 https://www.angular-meteor.com/tutorials/socially/angular1
 
